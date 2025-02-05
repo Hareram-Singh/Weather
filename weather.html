@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <p>Made By Hareram Singh</p>
+
+        <div class="content">
+                    <!-- Input and Get Weather Button -->
+        <div class="input-section">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit" id="getWeatherBtn">Submit</button>
+        </div>
+
+        <div class="weather-container">
+            <!-- Weather Display Section -->
+        <div id="weatherDisplay">
+            <div class="weather-header">
+                <h2 id="cityName">Delhi</h2>
+                <img src="" alt="Weather Icon" id="weatherIcon" class="weather-icon">
+                <p id="temperature">0°C</p>
+                <button id="unitToggle">C/F</button>
+                <div class="weather-details">
+                    <p id="humidity">Humidity: --%</p>
+                    <p id="weatherCondition">Condition: --</p>
+                </div>
+
+            </div>
+
+            <!-- 24-Hour Forecast -->
+            <div class="forecast-24h">
+                <h3>24-Hour Forecast</h3>
+                <div id="hourlyForecast" class="hourly-forecast">
+                    <!-- Hourly forecast items will be populated here -->
+                </div>
+            </div>
+
+            <!-- 5-Day Forecast -->
+            <div class="forecast-5day">
+                <h3>5-Day Forecast</h3>
+                <ul id="fiveDayForecast">
+                    <!-- 5-day forecast items will be populated here -->
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

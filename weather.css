@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Parent container for input and weather display */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input section styling */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather display container */
+.weather-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Weather header styling */
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weather-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.weather-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-header p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Toggle button for unit conversion */
+.weather-header button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.weather-header button:hover {
+    background-color: #218838;
+}
+
+/* Forecast sections */
+.forecast-24h, .forecast-5day {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hourly-forecast {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.hourly-forecast div {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    min-width: 80px;
+}
+
+.hourly-forecast img {
+    width: 40px;
+    height: 40px;
+}
+
+/* 5-day forecast styling */
+.forecast-5day ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forecast-5day ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.forecast-5day ul li:last-child {
+    border-bottom: none;
+}
+
+/* Error message */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.weather-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.weather-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.weather-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#unitToggle {
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .input-section {
+        flex-direction: column;
+    }
+
+    .input-section input, 
+    .input-section button {
+        width: 100%;
+    }
+
+    .hourly-forecast {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
