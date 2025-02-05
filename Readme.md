@@ -20,11 +20,11 @@ This Weather App allows users to search for current weather conditions, includin
 ### Steps to Run the Project Locally
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-repository/weather-app.git
+   git clone https://github.com/Hareram-Singh/Weather.git
    ```
 2. **Navigate to the Project Directory**
    ```sh
-   cd weather-app
+   cd Weather
    ```
 3. **Open the Project in a Code Editor (Optional)**
    Open the folder in VS Code or any preferred editor.
